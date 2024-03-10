@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lobster:regular);
+
+:root {
+    --primary-color: #FC7A57;   
+    --secondary-color: #EEFC57; 
+    --accent1-color: #DF9A57;   
+    --accent2-color: #5E5B52;
+
+    --heading-font: 'lobster', cursive;
+    --paragraph-font: 'roboto', sans-serif;
+     
+    --navigation-bg-color: var(--primary-color);
+    --navigation-link-color: white;
+    --navigation-hover-link-color: #f0f0f0;
+    --navigation-hover-bg-color: var(--secondary-color)
+}
+
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: auto;
+    padding: 20px
+}
+
+header {
+    font-family: 'lobster', cursive;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 10px;
+    text-align: center
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+h3 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px
+}
+
+nav {
+    background-color: var(--navigation-bg-color);
+    font-size: 1.2rem;
+    display: flex;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+nav a {
+    display: block;
+    margin-right: 10px;
+    color: var(--navigation-link-color);
+    text-decoration: none;
+    padding: 1rem;
+    transition: color 0.3s ease
+}
+
+nav a:hover {
+    color: var(--navigation-hover-link-color);
+    background-color: var(--navigation-hover-bg-color);
+    border-bottom: 2px solid var(--navigation-link-color)
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px
+}
+
+p {
+    padding: 25px
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center
+}
