@@ -1,0 +1,119 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #4567aa; /* Example primary color */
+    --secondary-color: #f0f0f0; /* Example secondary color */
+    --text-color: #333; /* Example text color */
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+.container {
+    max-width: 800px; /* Limit entire width of the page */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Heading and paragraph styles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color); /* Apply primary color to headings */
+}
+
+p {
+    color: var(--text-color); /* Apply text color to paragraphs */
+}
+
+/* Social media links */
+nav a {
+    text-decoration: none; /* Remove underlines from social media links */
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #4567aa; 
+    --secondary-color: #f0f0f0; 
+    --text-color: #333; 
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+.container {
+    max-width: 800px; /* Limit entire width of the page */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Heading and paragraph styles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color); /* Apply primary color to headings */
+}
+
+p {
+    color: var(--text-color); /* Apply text color to paragraphs */
+}
+
+/* Social media links */
+nav a {
+    text-decoration: none; /* Remove underlines from social media links */
+}
+
+.hero {
+    position: relative;
+    max-width: 50%; /* Ensure the hero image fits within the allocated space */
+}
+
+.hero img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.hero .content {
+    position: absolute;
+    top: 50%; /* Position content vertically centered */
+    left: 50%; /* Position content horizontally centered */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    text-align: center; /* Center align content */
+    color: white; /* Example text color */
+}
+
+.hero h1 {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    transform: translateX(10%);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hero article {
+    background-color: rgba(236, 7, 7, 0.7); 
+    padding: 20px;
+}
+
+.hero article p {
+    color: aqua;
+}
+
+.hero article img {
+    float: right;
+    margin: auto;
+}
+
+.hero article h2 {
+    color: bisque;
+    margin-bottom: 10px;
+}
