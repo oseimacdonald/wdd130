@@ -3,19 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex; /* Apply CSS Flex to the container */
+    justify-content: space-evenly; /* Justify with even spacing */
+    align-items: center; /* Center the content vertically */
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none; /* Remove text decoration */
 }
 
 h1 {
     color: steelblue;
+    border-bottom: 1px solid black; /* Add bottom border */
 }
 
 img {
@@ -32,6 +38,7 @@ p {
 
 main {
     max-width: 840px;
+    margin: 0 auto; /* Center the content on the page */
 }
 
 aside {
@@ -59,7 +66,10 @@ main img {
 .about-me {
     clear: right;
 }
-p {padding: 0;}
+
+p {
+    padding: 0;
+}
 
 footer {
     margin-top: 15px;
@@ -83,4 +93,16 @@ footer {
     left: 110px;
     padding: 5px;
     border-radius: 5px;
+} 
+
+/* Add .grid selector */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto; /* Center the content on the page */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Set columns, aside takes its natural width */
+    gap: 20px; /* Gap between grid items */
 }
