@@ -1,72 +1,59 @@
 body {
     max-width: 840px;
-    margin: 0 auto; /* Center the content on the page */
+    margin: 20px auto; /* Center the content on the page and add gap around it */
 }
 
-/* Header styling */
-header {
-	margin: 1rem auto;
-	display: grid;
-	grid-template-columns: 300px 1fr 2fr;
-	align-items: center;
-	border: 2px solid #ccc;
-    margin: auto;
+.grid {
+    display: flex;
+    justify-content: space-between; /* Items spaced apart */
+    align-items: center; /* Items vertically centered */
+    background-color: #e7519c;
+    border: 2px solid #ccc; /* Set a consistent border width */
     padding: 20px;
-	max-width: 1000px;
-    background-color: aqua;
 }
 
-/* header styling */
-.header img {
-	margin: 0 0.25rem 0 1rem;
-	width: 64px;
-	height: auto;
+.header-nav {
+    display: flex; /* Arrange navigation items horizontally */
+    align-items: center; /* Align navigation items at the bottom */
+    padding: 50px;
+    margin: 20px; /* Add gap around the header nav */
 }
 
-/* Navigation styling */
-nav {
-	text-align: right;
-    padding-left: 10px;
-}
-/* Navigation list styling */
-.navigation {
-	display: flex;
-	list-style: none;
-}
-
-/* Navigation list items styling */
-.navigation li {
-	flex: 1 1 auto;
+.header-nav a {
+    margin-right: 0px; /* Add spacing between navigation items */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Default text color */
+    background-color: #5969f3; /* Background color */
+    padding: 8px 12px; /* Add padding to increase clickable area */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border: 2px solid #ccc; /* Set a consistent border width */
 }
 
-/* Navigation links styling */
-.navigation a {
-	display: flex;
-	color: navy;
-	padding: 10px;
-	text-decoration: none;
-	border: 5px solid #080808; /* Add border around each item */
-	margin: 0 5px; /* Adjust margin between each item */
-	align-items: center; /* Align items vertically */
-	justify-content: center; /* Align items horizontally */
+.header-nav a:hover {
+    background-color: #ccc; /* Hover color */
 }
-/* Navigation links hover styling */
-.navigation a:hover {
-	color: tomato;
-	font-weight: 700;
-	text-decoration: underline;
+
+.header-image {
+    width: 150px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px;
+    margin: 20px; /* Add gap around the header image */
 }
 
 .outer-box {
     text-align: center;
-    border: 2px solid #ccc;
+    border: 2px solid #ccc; /* Set a consistent border width */
     padding: 20px;
+    margin: 20px; /* Add gap around the outer box */
 }
+
 .inner-box {
     display: flex;
     text-align: left; /* Align text to the left */
-    border: 2px solid #ccc;
+    border: 2px solid #ccc; /* Set a consistent border width */
     padding: 20px;
+    margin: 20px; /* Add gap around the inner box */
 }
 
 .page-title {
@@ -81,14 +68,13 @@ nav {
     max-width: 100%; /* Ensure image stays within container */
 }
 
-
-
 .history-section {
     max-width: 840px;
     margin: 0 auto;
     text-align: center;
-    border: 2px solid #ccc;
+    border: 2px solid #ccc; /* Set a consistent border width */
     padding: 20px;
+    margin: 20px; /* Add gap around the history section */
 }
 
 .history-section h2 {
@@ -117,8 +103,9 @@ nav {
 
 .adventures {
     text-align: center; /* Center the content horizontally */
-    border: 2px solid #ccc;
+    border: 2px solid #ccc; /* Set a consistent border width */
     padding: 20px;
+    margin: 20px; /* Add gap around the adventures section */
 }
 
 .adventures h2 {
@@ -150,14 +137,17 @@ nav {
 }
 
 footer {
-    background-color: #f0f0f0; /* Example background color */
+    background-color: #e7519c; /* Example background color */
     padding: 20px;
     text-align: center;
+    border: 2px solid #ccc; /* Set a consistent border width */
+    margin: 20px; /* Add gap around the footer */
 }
 
 .sociallinks {
     display: flex;
     justify-content: flex-end; /* Align items to the right */
+    margin: 20px; /* Add gap around the social links */
 }
 
 .sociallinks a {
@@ -169,5 +159,3 @@ footer {
     width: 100px; /* Adjust width as needed */
     height: auto;
 }
-
-
