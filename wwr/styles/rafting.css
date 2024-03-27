@@ -1,119 +1,173 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* Define CSS variables */
-:root {
-    --primary-color: #4567aa; /* Example primary color */
-    --secondary-color: #f0f0f0; /* Example secondary color */
-    --text-color: #333; /* Example text color */
-}
-
-/* Global styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--secondary-color);
+    max-width: 840px;
+    margin: 0 auto; /* Center the content on the page */
 }
 
-.container {
-    max-width: 800px; /* Limit entire width of the page */
-    margin: 0 auto; /* Center the content horizontally */
+/* Header styling */
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 300px 1fr 2fr;
+	align-items: center;
+	border: 2px solid #ccc;
+    margin: auto;
+    padding: 20px;
+	max-width: 1000px;
+    background-color: aqua;
 }
 
-/* Heading and paragraph styles */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color); /* Apply primary color to headings */
+/* header styling */
+.header img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
 }
 
-p {
-    color: var(--text-color); /* Apply text color to paragraphs */
+/* Navigation styling */
+nav {
+	text-align: right;
+    padding-left: 10px;
+}
+/* Navigation list styling */
+.navigation {
+	display: flex;
+	list-style: none;
 }
 
-/* Social media links */
-nav a {
-    text-decoration: none; /* Remove underlines from social media links */
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* Define CSS variables */
-:root {
-    --primary-color: #4567aa; 
-    --secondary-color: #f0f0f0; 
-    --text-color: #333; 
+/* Navigation list items styling */
+.navigation li {
+	flex: 1 1 auto;
 }
 
-/* Global styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--secondary-color);
+/* Navigation links styling */
+.navigation a {
+	display: flex;
+	color: navy;
+	padding: 10px;
+	text-decoration: none;
+	border: 5px solid #080808; /* Add border around each item */
+	margin: 0 5px; /* Adjust margin between each item */
+	align-items: center; /* Align items vertically */
+	justify-content: center; /* Align items horizontally */
+}
+/* Navigation links hover styling */
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
 }
 
-.container {
-    max-width: 800px; /* Limit entire width of the page */
-    margin: 0 auto; /* Center the content horizontally */
+.outer-box {
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 20px;
 }
-
-/* Heading and paragraph styles */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color); /* Apply primary color to headings */
-}
-
-p {
-    color: var(--text-color); /* Apply text color to paragraphs */
-}
-
-/* Social media links */
-nav a {
-    text-decoration: none; /* Remove underlines from social media links */
-}
-
-.hero {
-    position: relative;
-    max-width: 50%; /* Ensure the hero image fits within the allocated space */
-}
-
-.hero img {
-    display: block;
-    width: 50%;
-    height: auto;
-}
-
-.hero .content {
-    position: absolute;
-    top: 50%; /* Position content vertically centered */
-    left: 50%; /* Position content horizontally centered */
-    transform: translate(-50%, -50%); /* Adjust position to center */
-    text-align: center; /* Center align content */
-    color: white; /* Example text color */
-}
-
-.hero h1 {
-    position: absolute;
-    top: 2px;
-    left: 3px;
-    transform: translateX(10%);
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.hero article {
-    background-color: rgba(236, 7, 7, 0.7); 
+.inner-box {
+    display: flex;
+    text-align: left; /* Align text to the left */
+    border: 2px solid #ccc;
     padding: 20px;
 }
 
-.hero article p {
-    color: aqua;
+.page-title {
+    margin-bottom: 20px; /* Add spacing below the title */    
 }
 
-.hero article img {
-    float: right;
-    margin: auto;
+.inner-box p {
+    max-width: 600px; /* Limit the width of the paragraph */
 }
 
-.hero article h2 {
-    color: bisque;
-    margin-bottom: 10px;
+.inner-box img {
+    max-width: 100%; /* Ensure image stays within container */
 }
+
+
+
+.history-section {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+
+.history-section h2 {
+    margin-bottom: 20px;
+}
+
+.content-containers {
+    display: flex;
+    column-gap: 20px;
+}
+
+.left-column, 
+.right-column{
+    flex: 1;
+}
+
+.center-column {
+    flex: 1;
+    text-align: center;
+}
+
+.center-column img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.adventures {
+    text-align: center; /* Center the content horizontally */
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+
+.adventures h2 {
+    margin-bottom: 20px; /* Add space between heading and images */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items along the main axis */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    margin: 0 auto; /* Center the image container horizontally */
+    max-width: 100%; /* Ensure the container doesn't exceed viewport width */
+}
+
+.image-container figure {
+    flex: 0 0 auto; /* Allow items to shrink, but not grow */
+    width: calc(20% - 10px); /* Set width for each image (minus margin) */
+    margin: 0 5px; /* Add space between images */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto;
+}
+
+.image-container figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.sociallinks a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.sociallinks img {
+    width: 100px; /* Adjust width as needed */
+    height: auto;
+}
+
+
