@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Mac-Donald Bonsu Osei | WDD 130</title>
+        <meta name="description" content="Quiz Form">
+        <meta name="author" content="Mac-Donald Bonsu Osei">
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+    <body>
+        <header>
+            <h1>HTML and CSS Quiz</h1>
+        </header>
+        <div id="quiz-container">
+            <div class="section">
+                <h2>HTML Questions</h2>
+                <form id="html-questions">
+                    <div class="question">
+                        <label for="q1"><span class="question-number">1.</span> What is the full meaning of HTML:</label>
+                        <div class="answer-box">
+                            <input type="text" id="q1" name="q1" required>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label for="q2"><span class="question-number">2.</span> Describe the purpose of HTML:</label>
+                        <div class="answer-box">
+                            <textarea id="q2" name="q2" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label for="q3"><span class="question-number">3.</span> Which of the following represents a paragraph in HTML?</label>
+                        <div class="answer-box">
+                            <select id="q3" name="q3" required>
+                                <option value="" selected disabled>Choose One ...</option>
+                                <option value="<p>This is a paragraph.</p>">&lt;p&gt;This is a paragraph.&lt;/p&gt;</option>
+                                <option value="<h1>This is a paragraph.</h1>">&lt;h1&gt;This is a paragraph.&lt;/h1&gt;</option>
+                                <option value="<div>This is a paragraph.</div>">&lt;div&gt;This is a paragraph.&lt;/div&gt;</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label for="q4"><span class="question-number">4.</span> How old is HTML:</label>
+                        <div class="answer-box">
+                            <input type="number" id="q4" name="q4" required>
+                        </div>
+                    </div>
+                </form>
+                <button type="submit" form="html-questions">Submit Quiz</button>
+            </div>
+            <div class="section">
+                <h2>CSS Questions</h2>
+                <form id="css-questions">
+                    <div class="question">
+                        <label for="q5"><span class="question-number">5.</span> Fill in the blank:</label>
+                        <div class="answer-box">
+                            <input type="text" id="q5" name="q5" required>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label for="q6"><span class="question-number">6.</span> Short answer question:</label>
+                        <div class="answer-box">
+                            <textarea id="q6" name="q6" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label for="q7"><span class="question-number">7.</span> Which of the following is used to apply styles to HTML elements?</label>
+                        <div class="answer-box">
+                            <select id="q7" name="q7" required>
+                                <option value="" selected disabled>Choose One ...</option>
+                                <option value="color: blue;">color: blue;</option>
+                                <option value="background-color: red;">background-color: red;</option>
+                                <option value="font-family: Arial, sans-serif;">font-family: Arial, sans-serif;</option>
+                                <option value="&lt;style&gt;...&lt;/style&gt;">&lt;style&gt;...&lt;/style&gt;</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label for="q8"><span class="question-number">8.</span> Enter an integer:</label>
+                        <div class="answer-box">
+                            <input type="number" id="q8" name="q8" required>
+                        </div>
+                    </div>
+                </form>
+                <button type="submit" form="css-questions">Submit Quiz</button>
+            </div>
+        </div>
+    </body>
+    </html>
