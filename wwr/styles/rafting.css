@@ -10,7 +10,7 @@ body {
     max-width: 760px;
     justify-content: space-between; /* Items spaced apart */
     align-items: center; /* Items vertically centered */
-    background-color: #e7519c;
+    background-color: #a83b7f;
     border: 2px solid #ccc; /* Set a consistent border width */
     padding: 20px;
     margin: 20px auto;
@@ -26,8 +26,8 @@ body {
 .header-nav a {
     margin-right: 0px; /* Add spacing between navigation items */
     text-decoration: none; /* Remove underline from links */
-    color: #333; /* Default text color */
-    background-color: #5969f3; /* Background color */
+    color: #ffffff; /* Default text color */
+    background-color: #4452c6; /* Background color */
     padding: 8px 12px; /* Add padding to increase clickable area */
     border-radius: 5px; /* Add rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition */
@@ -35,7 +35,7 @@ body {
 }
 
 .header-nav a:hover {
-    background-color: #ccc; /* Hover color */
+    background-color: #999999; /* Hover color */
 }
 
 .header-image {
@@ -141,7 +141,7 @@ body {
 }
 
 footer {
-    background-color: #e7519c; /* Example background color */
+    background-color: #9e3d75; /* Example background color */
     padding: 20px;
     text-align: center;
     border: 2px solid #ccc; /* Set a consistent border width */
