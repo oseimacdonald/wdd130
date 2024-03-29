@@ -1,0 +1,98 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 840px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: #e7519c;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+
+.header-logo img {
+    width: 100px;
+}
+
+.header-title {
+    text-align: center;
+    color: #fff;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Main Styles */
+.outer-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.inner-box {
+    text-align: justify;
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.adventures figure {
+    margin-right: 20px;
+}
+
+.adventures img {
+    max-width: 100%;
+    height: auto;
+}
+
+.adventures figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e7519c;
+    padding: 20px;
+    text-align: right;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    margin-left: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
