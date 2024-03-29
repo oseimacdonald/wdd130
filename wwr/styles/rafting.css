@@ -11,7 +11,7 @@ body {
     justify-content: space-between; /* Items spaced apart */
     align-items: center; /* Items vertically centered */
     background-color: #e7519c;
-    border: 2px solid #0c0c0c; /* Set a consistent border width */
+    border: 2px solid #ccc; /* Set a consistent border width */
     padding: 20px;
     margin: 20px auto;
 }
