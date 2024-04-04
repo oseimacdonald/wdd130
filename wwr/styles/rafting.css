@@ -206,6 +206,9 @@ footer {
 }
 
 .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 840px;
     margin: 0 auto;
     text-align: center;
@@ -216,12 +219,6 @@ footer {
 
 .contact-form h2 {
     margin-bottom: 20px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .contact-form label {
