@@ -296,3 +296,19 @@ footer {
     border-radius: 50%; /* Make the images circular */
     margin-bottom: 10px; /* Add space below the images */
 }
+
+/* Submit button styles */
+.submit-button {
+    padding: 10px 20px;
+    background-color: #4452c6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #999;
+}
