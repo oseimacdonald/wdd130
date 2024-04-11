@@ -1,98 +1,132 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-body {
+.contact-info {
     max-width: 840px;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-}
-
-/* Header Styles */
-.header-grid {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    background-color: #e7519c;
-    border: 2px solid #ccc;
-    padding: 20px;
-}
-
-.header-logo img {
-    width: 100px;
-}
-
-.header-title {
+    margin: 0 auto;
     text-align: center;
-    color: #fff;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-/* Main Styles */
-.outer-box {
     border: 2px solid #ccc;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
-.section-title {
+.contact-info h2 {
     margin-bottom: 20px;
 }
 
-.inner-box {
-    text-align: justify;
-}
-
-.adventures {
-    display: flex;
-    justify-content: space-between;
-    overflow-x: auto;
-}
-
-.adventures figure {
-    margin-right: 20px;
-}
-
-.adventures img {
-    max-width: 100%;
-    height: auto;
-}
-
-.adventures figcaption {
+.employee-profiles {
+    max-width: 840px;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 5px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #e7519c;
+    border: 2px solid #ccc;
     padding: 20px;
-    text-align: right;
+    margin: 20px;
 }
 
-.social-links {
+.employee-profiles h2 {
+    margin-bottom: 20px;
+}
+
+.employee {
+    margin-bottom: 20px;
+}
+
+.employee img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee p {
+    font-weight: bold;
+}
+
+.contact-form {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px;
 }
 
-.social-links a {
-    margin-left: 10px;
+.contact-form h2 {
+    margin-bottom: 20px;
 }
 
-.social-links img {
-    width: 30px;
-    height: 30px;
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4452c6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #999;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect ratio of 16:9 (height: 9 / width: 16) */
+    overflow: hidden;
+}
+
+.map-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default iframe border */
+}
+
+.employee-profiles {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Add some space above the section */
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.employee {
+    flex: 0 0 calc(33.33% - 20px); /* Each employee takes up one-third of the container width with some margin between them */
+    margin-bottom: 20px; /* Add space between each employee profile */
+    text-align: center; /* Center the content within each employee div */
+}
+
+.employee img {
+    width: 100%; /* Make the images fill the entire width of their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the images circular */
+    margin-bottom: 10px; /* Add space below the images */
 }
