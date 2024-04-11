@@ -136,8 +136,11 @@
 
 /* Call to action */
 .contact-action {
+    max-width: 760px;
+    margin: 20px;
     text-align: center;
     padding: 20px;
+    border: 2px solid #ccc;
 }
 
 .contact-action h2 {
@@ -166,6 +169,14 @@
 
 
 /* Styles for the Trip Details section */
+.trip-details {
+    max-width: 760px;
+    border: 2px solid #ccc; /* Add border around the trip details */
+    padding: 20px;
+    margin: 20px auto; /* Adjust margin as needed */
+    display: flex;
+}
+
 .trip-details-container {
     text-align: center;
 }
@@ -175,8 +186,9 @@
 }
 
 .trip {
+    flex: 1;
     display: inline-block;
-    width: calc(33% - 20px);
+    width: calc(30% - 20px);
     margin: 10px;
     text-align: left;
 }
@@ -193,7 +205,9 @@
 
 /* Trip table */
 .trip-table {
+    border: 2px solid #ccc;
     text-align: center;
+    margin: 20px;
     padding: 20px;
 }
 
@@ -214,6 +228,10 @@
 
 .trip-table td {
     background-color: #f5f5f5;
+}
+
+a[href="images/trip.jpeg"] {
+    color: #ffffff;
 }
 
 body {
@@ -387,7 +405,6 @@ a[href="images/screenshot.png"] {
     filter: invert(100%);
 }
 
-/* Styles specific to the "Contact Us" page */
 /* Styles specific to the "Contact Us" page */
 .contact-info,
 .contact-form {
