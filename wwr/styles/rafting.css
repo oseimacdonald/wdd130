@@ -97,7 +97,7 @@
     background-color: #fff;
     padding: 20px 0;
     text-align: center;
-    border: 2px solid #ccc;
+    border: none;
     max-width: 800px;
     margin: 20px;
 }
@@ -591,4 +591,28 @@ a[href="images/screenshot.png"] {
 
 a[href="images/contactus.jpeg"] {
     color: #ffffff;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 38%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.heros {
+    max-width: 840px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin: 20px;
 }
